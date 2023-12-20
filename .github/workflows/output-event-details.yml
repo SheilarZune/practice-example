@@ -9,4 +9,4 @@ jobs:
             - name: Output Event Path
               run: echo "${{ github.event_path }}"
             - name: Output Event
-              run: echo "${{ github.event }}"
+              run: echo "${{ toJson(github.event) }}"
